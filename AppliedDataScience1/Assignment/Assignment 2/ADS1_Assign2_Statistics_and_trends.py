@@ -79,12 +79,12 @@ def line_plot(dataframe, headers, legends, labels):
     # using format string '{:.0f}' here but you can choose others
     plt.gca().set_yticklabels(
         ['{:.0f} billion'.format(x/1000000000) for x in current_values])
-
-    # Display the plot
-    plt.show()
-
+    
     # Save the plot as an image file
     plt.savefig("LineChart_22099668.png", dpi=300)
+    
+    # Display the plot
+    plt.show()
 
     return
 
@@ -108,13 +108,14 @@ def pie_chart(dataframe, labels, title):
     # Create the pie chart with custom autopct and font size for labels
     plt.pie(dataframe, labels=labels, autopct='%.2f%%',
             explode=myexplode, textprops={'fontsize': 9}, shadow=True)
+    
 
     # Set the title for the pie chart
     plt.title(title)
-
+    
     # Save the pie chart as an image file
     plt.savefig("PieChart_22099668.png", dpi=300)
-
+    
     # Display the pie chart
     plt.show()
 
@@ -166,11 +167,12 @@ def bar_plot(categories, bar1_percentage, bar2_percentage, bar_labels, labels):
 
     # Set y-axis limits to 0 and 100
     plt.ylim(0, 100)
-
+    
+    # Save the bar chart as an image file
+    plt.savefig("BarChart_22099668.png", dpi=300)
+    
     # Show the plot
     plt.show()
-
-    plt.savefig("BarChart_22099668.png", dpi=300)
 
     return
 
@@ -202,11 +204,12 @@ def area_chart(df_pop_growth_T, headers, labels):
 
     # Show legend
     plt.legend(headers)
-
+    
+    # Save the area chart as an image file
+    plt.savefig("AreaChart_22099668.png", dpi=300)
+    
     # Display the plot
     plt.show()
-
-    plt.savefig("AreaChart_22099668.png", dpi=300)
 
     return
 
