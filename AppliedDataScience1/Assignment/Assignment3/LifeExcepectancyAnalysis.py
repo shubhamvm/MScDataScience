@@ -20,6 +20,8 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import statsmodels.api as sm
 import plotly.graph_objects as go
+import plotly.io as pio
+pio.renderers.default='browser'
 
 # student id for saving the plots
 student_id = '22099668_'
@@ -63,7 +65,7 @@ def max_silhouette_score(df):
     # Calculate silhouette score for 2 to 10 clusters
     for ic in range(2, 11):
         score = one_silhouette(df, ic)
-        # print(f"The silhouette score for {ic: 3d} is {score: 7.4f}")
+        print(f"The silhouette score for {ic: 3d} is {score: 7.4f}")
         lSilhouetteScores.append(score)
 
     # Get the index of the maximum value
@@ -325,8 +327,10 @@ def mapplot(df):
     fig.update_layout(geo=dict(fitbounds="locations",
                       visible=False), margin=dict(l=0, r=0, b=0, t=0))
 
-    # Save the plot as an image file
-    plt.savefig(student_id + "mapplot.png", dpi=300)
+    
+    # Save the plot as a PNG file
+    pio.write_image(fig, student_id + "mapplot.png")
+    
     # Show the map
     fig.show()
 
@@ -357,8 +361,10 @@ def bubble_map_plot(df):
                          projection="natural earth",
                          title='Scatter Plot on Map: Alcohol Consumption and Life Expectancy',
                          )
-    # Save the plot as an image file
-    plt.savefig(student_id + "bubble_map_plot.png", dpi=300)
+    
+    # Save the plot as a PNG file
+    pio.write_image(fig, student_id + "bubble_map_plot.png")
+    
     # Show the map
     fig.show()
 
@@ -414,8 +420,9 @@ def life_expectancy_prediction(df):
                       xaxis_title='Year',
                       yaxis_title='Life Expectancy',
                       legend=dict(x=0, y=1, traceorder='normal'))
-    # Save the plot as an image file
-    plt.savefig(student_id + "life_expectancy_prediction.png", dpi=300)
+    
+    # Save the plot as a PNG file
+    pio.write_image(fig, student_id + "life_expectancy_prediction.png")
 
     fig.show()
 
