@@ -3,7 +3,7 @@
 Created on Fri Jan  5 13:41:45 2024
 
 @author: Shubham Verma
-Student ID: 22099668
+Student id: 22099668
 email: sv23abk@herts.ac.uk
 """
 
