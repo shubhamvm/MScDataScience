@@ -1,0 +1,36 @@
+--For the chinook.db database:
+
+--1. Output the album id and title for the first 10 albums (ordered alphabetically)
+SELECT AlbumId, Title FROM albums ORDER BY Title limit 10;
+
+--2. How many distinct cities are there for the customers? Which cities have the most sales?
+SELECT  (SELECT COUNT(DISTINCT(City)) FROM customers) as DistinctCitiesCount, 
+COUNT(cm.City) as NoOfRecords, cm.City, iv.Total as TotalSales FROM invoices iv INNER JOIN customers cm ON iv.CustomerId = cm.CustomerId 
+GROUP BY City ORDER BY iv.Total DESC;
+
+--3. How many tracks are there in the album with album id 1?
+SELECT AlbumID,  COUNT(*) AS NoOfRecords FROM albums GROUP BY AlbumId;
+
+--4. Find all invoices whose total is between 14.94 and 18.56.
+SELECT * FROM invoices WHERE Total BETWEEN 14.94 AND 18.56;
+
+--5. Find all tracks whose name starts with 'Rock'.
+SELECT * FROM tracks WHERE Name like 'Rock%'
+
+--6. Find all tracks whose composer is unknown.
+SELECT * FROM tracks WHERE composer IS NULL
+
+--7. Output the track id, track title and album title (on the same output). Rename the columns.
+SELECT tr.TrackId AS TrackID, tr.Name AS TrackTitle, al.Title AS AlbumTitle FROM tracks tr INNER JOIN albums al ON tr.AlbumId = al.AlbumId;
+
+--8. Output the album id and the number of tracks per album.
+SELECT AlbumId, COUNT(*) AS NoOfTracks FROM tracks GROUP BY AlbumId;
+
+--9. Find the average amount that customer has paid.
+SELECT AVG(Total) AS AverageAmount FROM invoices
+
+--10. What is the maximum (resp. minimum) that a customer has paid?
+SELECT Min(Total) AS MinimumAmount, MAX(Total) AS MaximumAmount FROM invoices
+
+--11. What is the total revenue for the UK?
+SELECT SUM(Total) AS TotalRevenue FROM invoices WHERE BillingCountry = 'United Kingdom'
