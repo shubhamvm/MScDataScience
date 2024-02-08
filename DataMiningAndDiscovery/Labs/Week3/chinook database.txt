@@ -1,0 +1,13 @@
+For the chinook.db database:
+
+1. Output the album id and title for the first 10 albums (ordered alphabetically)
+2. How many distinct cities are there for the customers? Which cities have the most sales?
+3. How many tracks are there in the album with album id 1?
+4. Find all invoices whose total is between 14.94 and 18.56.
+5. Find all tracks whose name starts with 'Rock'.
+6. Find all tracks whose composer is unknown.
+7. Output the track id, track title and album title (on the same output). Rename the columns.
+8. Output the album id and the number of tracks per album.
+9. Find the average amount that customer has paid.
+10. What is the maximum (resp. minimum) that a customer has paid?
+11. What is the total revenue for the UK?
