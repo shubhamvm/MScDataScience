@@ -25,7 +25,7 @@ This GitHub repository contains the code and resources for my MSc Data Science f
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/medical-insurance-cost-prediction.git
+git clone (https://github.com/shubhamvm/MScDataScience/tree/main/Data%20Science%20Project)
 ```
 
 Install the required Python packages:
@@ -99,4 +99,4 @@ This project demonstrates the effectiveness of various regression techniques in 
 
 ## Contact
 
-For any questions or issues, please feel free to contact me via [your email] or open an issue on this repository.
+For any questions or issues, please feel free to contact me via shubhamverma321@gmail.com or open an issue on this repository.
