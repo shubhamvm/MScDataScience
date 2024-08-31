@@ -25,7 +25,7 @@ This GitHub repository contains the code and resources for my MSc Data Science f
 Clone the repository to your local machine:
 
 ```bash
-git clone (https://github.com/shubhamvm/MScDataScience/tree/main/Data%20Science%20Project)
+git clone https://github.com/shubhamvm/MScDataScience/tree/main/Data%20Science%20Project
 ```
 
 Install the required Python packages:
@@ -60,19 +60,19 @@ The output of the code includes:
 
 ### Preprocessing
 
-- **data_preprocessing.py**: Script for handling missing values, encoding categorical variables, scaling features, and splitting the data into training and testing sets.
-- **outlier_removal.py**: Script for identifying and removing high leverage points and outliers.
+- **data_preprocessing**: Script for handling missing values, encoding categorical variables, scaling features, and splitting the data into training and testing sets.
+- **outlier_removal**: Script for identifying and removing high leverage points and outliers.
 
 ### Model Training
 
-- **linear_regression.py**: Script for training and evaluating a linear regression model.
-- **quantile_regression.py**: Script for training and evaluating quantile regression models.
-- **xgboost_model.py**: Script for training and evaluating XGBoost models.
+- **linear_regression**: Script for training and evaluating a linear regression model.
+- **quantile_regression**: Script for training and evaluating quantile regression models.
+- **xgboost_model**: Script for training and evaluating XGBoost models.
 
 ### Model Evaluation
 
-- **evaluation_metrics.py**: Script for calculating and displaying MSE and R² scores for each model.
-- **visualization.py**: Script for generating plots, including actual vs. predicted costs, residuals, and feature importance.
+- **evaluation_metrics**: Script for calculating and displaying MSE and R² scores for each model.
+- **visualization**: Script for generating plots, including actual vs. predicted costs, residuals, and feature importance.
 
 ## Parameters and Hyperparameters
 
