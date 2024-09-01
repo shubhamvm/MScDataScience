@@ -97,6 +97,10 @@ During the development of this project, several challenges were encountered:
 
 This project demonstrates the effectiveness of various regression techniques in predicting medical insurance costs. The repository provides the necessary code and documentation to replicate the analysis and further explore the application of these models to similar datasets.
 
+## PowerBI Dashboard Preview
+![Insurance Dashboard Page 1](https://github.com/shubhamvm/Project/blob/main/Power%20BI%20Reports%20and%20Dashboards/Medical%20Insurance%20Cost%20Analysis/Medical%20Insurance%20Cost%20Analysis%20Dashboard-images-0.jpg)
+![Insurance Dashboard Page 2](https://github.com/shubhamvm/Project/blob/main/Power%20BI%20Reports%20and%20Dashboards/Medical%20Insurance%20Cost%20Analysis/Medical%20Insurance%20Cost%20Analysis%20Dashboard-images-1.jpg)
+
 ## Contact
 
 For any questions or issues, please feel free to contact me via shubhamverma321@gmail.com or open an issue on this repository.
